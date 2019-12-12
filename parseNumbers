@@ -1,0 +1,5 @@
+String number = "66"
+
+if (number.isInteger()) {
+  int value = number as Integer
+}
