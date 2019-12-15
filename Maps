@@ -1,0 +1,10 @@
+//use varaibles in map keys
+
+def A = "abc"
+def X = "xyz"
+
+def map = [(A):1, (X):2]
+
+For the value-part it's even easier, since there is no automagic "convert text to string" happening:
+
+def map = [keyA:A, keyX:X]
