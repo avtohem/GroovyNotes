@@ -1,0 +1,14 @@
+//Dynamic method invocation - red for more understanding...
+
+switch (val) {
+case "one":
+    Obj.one()
+    break
+case "two":
+    Obj.two()
+    break
+}
+
+I’d like to do something like obj.val where val contains either "one" or "two" instead of a case statement.
+
+obj."$val"()
