@@ -1,0 +1,25 @@
+//Closure declaration
+
+def Closure clo1(a){
+  println a
+}
+
+clo1("test") 
+//println clo1.getClass() //didn't work because of clo1 it's not property...
+
+//Standart closure delaration
+def clo2 = {
+  println it
+}
+
+clo2("test2")
+println clo2.getClass()
+
+//link closure to method. Possible link any class method
+def localMeth(d){
+  println d
+}
+
+clo3 = this.&localMeth
+clo3("test3")
+println clo3.getClass()
