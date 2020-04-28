@@ -1,0 +1,12 @@
+
+    dh = new File('.')
+    dh.eachFile {
+        println(it)
+    }
+    
+    // recursive into sub dir
+        dh = new File('.')
+    dh.eachFileRecurse {
+        println it
+    }
+    
